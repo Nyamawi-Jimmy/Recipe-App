@@ -91,7 +91,7 @@ final foods=<Foods>[
       levels: 'Intermediate',
       ingredients:'2 cups all-purpose flour. 1/2 cup sugar. 1 teaspoon baking powder. 1/4 teaspoon ground cardamom. 1/2 cup coconut milk. Vegetable oil for frying',
       steps:'In a bowl, mix flour, sugar, baking powder, and cardamom. Gradually add coconut milk and knead to form a soft dough.Roll out the dough and cut into triangular shapes. Heat oil in a pan and fry the mandazi until golden brown on both sides.',
-      avatar: "assets/images/ugali.jpeg"
+      avatar: "assets/images/chapati.jpeg"
 
 
   ),

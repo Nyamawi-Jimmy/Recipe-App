@@ -30,15 +30,24 @@ class CategoryPage extends StatelessWidget {
               ),
             ),
           ),
-          Text(
-            category.name,
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
+          Padding(
+            padding:  EdgeInsets.symmetric(vertical: Dimensions.height10,horizontal: Dimensions.width20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  category.name,
+                  style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SmallText(text:category.description,color: Dimensions.paraColor,
+                )
+              ],
             ),
-          ),
-          SmallText(text:category.description,color: Dimensions.paraColor,
           )
+
           // ...
         ],
       ),
