@@ -15,13 +15,12 @@ class RecommendedDescription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Use the 'food' object to access its properties, e.g., 'food.title'
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
         toolbarHeight: 80,
         backgroundColor: Colors.black,
-        title: BigText(text: food.title+" Recipe"), // Display the title in the app bar
+        title: BigText(text: food.title+" Recipe"),
       ),
       body:SingleChildScrollView(
         child: Column(
@@ -69,7 +68,6 @@ class RecommendedDescription extends StatelessWidget {
             )
 
           ],
-          // Display the title in the body
         ),
       ),
 

@@ -17,15 +17,12 @@ class ExploreScreen extends StatelessWidget {
         backgroundColor: Colors.black,
         centerTitle: true,
         title: Text("Explore"),
-        // Add any additional app bar customization as needed
       ),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Featured Recipes
             _buildSectionTitle("Featured Recipes"),
-            // Horizontal list of featured recipes
             Container(
               height: 200, // Adjust the height as needed
               child: ListView.builder(
@@ -48,10 +45,7 @@ class ExploreScreen extends StatelessWidget {
                 return _buildCategoryCard(context,categories[index]);
               }),
             ),
-
-            // Popular Recipes
             _buildSectionTitle("Popular Recipes"),
-            // List of popular recipes
             ListView.builder(
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
@@ -82,11 +76,10 @@ class ExploreScreen extends StatelessWidget {
   Widget _buildFeaturedRecipeCard(BuildContext context, Recipe recipe) {
     return GestureDetector(
       onTap: () {
-        // Implement navigation to the featured recipe details screen
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => FeaturedPage(recipe: recipe), // Replace 'FeaturedPage()' with your actual page for the featured recipe details
+            builder: (context) => FeaturedPage(recipe: recipe),
           ),
         );
       },
@@ -107,7 +100,7 @@ class ExploreScreen extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => CategoryPage(category: category), // Replace 'FeaturedPage()' with your actual page for the featured recipe details
+            builder: (context) => CategoryPage(category: category),
           ),
         );
       },
@@ -128,11 +121,10 @@ class ExploreScreen extends StatelessWidget {
     return GestureDetector(
       onTap: (){
         print("tapped");
-        // Implement navigation to the featured recipe details screen
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => PopularPage(recipe: recipe), // Replace 'FeaturedPage()' with your actual page for the featured recipe details
+            builder: (context) => PopularPage(recipe: recipe),
           ),
         );
       },
@@ -143,7 +135,6 @@ class ExploreScreen extends StatelessWidget {
           subtitle: SmallText(text:recipe.description,color: Dimensions.paraColor,),
           trailing: Icon(Icons.arrow_forward),
           onTap: () {
-            // Implement navigation to the recipe details screen
           },
         ),
       ),
@@ -170,10 +161,8 @@ Map<IconData, String> iconImageMap = {
   Icons.soup_kitchen: "assets/images/soups.jpeg",
   Icons.cake: "assets/images/desserts.jpeg",
   Icons.local_pizza: "assets/images/pasta.jpeg",
-  // Add more icon-image mappings as needed
 };
 
-// Sample data for demonstration purposes
 List<Recipe> featuredRecipes = [
   Recipe(title: "Appetizers", description: "Small dishes served before a meal to stimulate the appetite.", imagePath: "assets/images/bhajia.jpeg"),
   Recipe(title: "Side Dishes", description: "Complementary dishes served alongside the main course.", imagePath: "assets/images/nyama.jpeg"),

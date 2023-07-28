@@ -21,7 +21,7 @@ class CategoryPage extends StatelessWidget {
             width: Dimensions.screenWidth,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(iconImageMap[category.icon]!), // Access the image path from the 'recipe' object
+                image: AssetImage(iconImageMap[category.icon]!),
                 fit: BoxFit.cover,
               ),
               borderRadius: BorderRadius.only(
@@ -30,9 +30,8 @@ class CategoryPage extends StatelessWidget {
               ),
             ),
           ),
-          // Use the 'recipe' object to access its properties, e.g., 'recipe.title'
           Text(
-            category.name, // Access the title from the 'recipe' object
+            category.name,
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,

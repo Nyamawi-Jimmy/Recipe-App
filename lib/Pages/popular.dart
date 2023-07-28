@@ -20,7 +20,7 @@ class PopularPage extends StatelessWidget {
             width: Dimensions.screenWidth,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(recipe.imagePath), // Access the image path from the 'recipe' object
+                image: AssetImage(recipe.imagePath),
                 fit: BoxFit.cover,
               ),
               borderRadius: BorderRadius.only(
@@ -29,9 +29,8 @@ class PopularPage extends StatelessWidget {
               ),
             ),
           ),
-          // Use the 'recipe' object to access its properties, e.g., 'recipe.title'
           Text(
-            recipe.title, // Access the title from the 'recipe' object
+            recipe.title,
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,

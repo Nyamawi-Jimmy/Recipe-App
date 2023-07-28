@@ -21,7 +21,7 @@ class FeaturedPage extends StatelessWidget {
             width: Dimensions.screenWidth,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage(recipe.imagePath), // Access the image path from the 'recipe' object
+                image: AssetImage(recipe.imagePath),
                 fit: BoxFit.cover,
               ),
               borderRadius: BorderRadius.only(
@@ -30,7 +30,7 @@ class FeaturedPage extends StatelessWidget {
               ),
             ),
           ),
-          // Use the 'recipe' object to access its properties, e.g., 'recipe.title'
+
           Text(
             recipe.title, // Access the title from the 'recipe' object
             style: TextStyle(
@@ -44,7 +44,6 @@ class FeaturedPage extends StatelessWidget {
            color: Dimensions.paraColor,
           ),
 
-          // ...
         ],
       ),
     );

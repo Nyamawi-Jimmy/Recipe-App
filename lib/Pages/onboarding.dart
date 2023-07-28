@@ -71,7 +71,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 backgroundColor:Colors.blueAccent
               ),
               onPressed: () {
-                // Logic to direct to the homepage after the last onboarding screen
                 Navigator.pushReplacementNamed(context, "main");
               },
               child: Text("Get Started",style: TextStyle(fontSize: 20),),

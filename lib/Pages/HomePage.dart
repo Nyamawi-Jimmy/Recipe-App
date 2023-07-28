@@ -57,13 +57,10 @@ class HomePage extends StatelessWidget {
                             fontSize: Dimensions.font20,
                             color: Colors.white)),
                     SizedBox(height: Dimensions.height10),
-                    // Using LayoutBuilder to conditionally build the ListView
                     LayoutBuilder(
                       builder: (context, constraints) {
-                        // Get the screen width
                         double screenWidth = constraints.maxWidth;
 
-                        // Decide the cross-axis count based on screen width
                         int crossAxisCount;
                         double containerWidth;
                         if (screenWidth >= 1200) {
@@ -95,16 +92,16 @@ class HomePage extends StatelessWidget {
                                   children: [
                                     FractionallySizedBox(
                                       alignment: Alignment.topCenter,
-                                      heightFactor: 0.80, // 75% height for the image
+                                      heightFactor: 0.80,
                                       child: Container(
                                         margin: EdgeInsets.all(Dimensions.height10),
                                         width: Dimensions.width40 * 6,
                                         decoration: BoxDecoration(
                                           image: DecorationImage(
-                                            image: AssetImage(foods[index].avatar), // Adjust the image path
+                                            image: AssetImage(foods[index].avatar),
                                             fit: BoxFit.cover,
                                           ),
-                                          color: Colors.grey, // Set the background color
+                                          color: Colors.grey,
                                           borderRadius: BorderRadius.circular(Dimensions.radius15)
                                         ),
                                       ),
@@ -116,7 +113,7 @@ class HomePage extends StatelessWidget {
                                       left: 0,
                                       right: 0,
                                       child: Container(
-                                        height: Dimensions.height40, // 25% height for the black container
+                                        height: Dimensions.height40,
                                         color: Colors.black,
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -151,13 +148,10 @@ class HomePage extends StatelessWidget {
                             fontSize: Dimensions.font20,
                             color: Colors.white)),
                     SizedBox(height: Dimensions.height10),
-                    // Using LayoutBuilder to conditionally build the ListView
                     LayoutBuilder(
                       builder: (context, constraints) {
-                        // Get the screen width
                         double screenWidth = constraints.maxWidth;
 
-                        // Decide the cross-axis count based on screen width
                         int crossAxisCount;
                         double containerWidth;
                         if (screenWidth >= 1200) {
@@ -189,7 +183,7 @@ class HomePage extends StatelessWidget {
                                     Container(
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(Dimensions.radius15),
-                                        color: Colors.grey.shade700, // Set the background color
+                                        color: Colors.grey.shade700,
                                       ),
                                     height: Dimensions.height25 * 4,
                                     margin: EdgeInsets.all(Dimensions.height10),

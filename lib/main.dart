@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recipe/Pages/popular_description.dart';
-import 'package:recipe/widgets/FoodDetailsPopular.dart';
+
 import 'DImensions/dimensions.dart';
-import 'Pages/HomePage.dart';
 import 'Pages/mainlayout.dart';
 import 'Pages/onboarding.dart';
 
@@ -13,7 +11,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -36,8 +33,6 @@ class MyApp extends StatelessWidget {
         //"home":(context)=> HomePage(),
         "main":(context)=> MainLayout(),
         "boarding":(context)=> OnboardingScreen(),
-
-
 
       },
     );

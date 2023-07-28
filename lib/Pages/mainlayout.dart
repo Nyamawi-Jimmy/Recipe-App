@@ -31,8 +31,6 @@ class _MainLayoutState extends State<MainLayout> {
         children: [
           HomePage(),
           ExploreScreen(),
-
-
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
